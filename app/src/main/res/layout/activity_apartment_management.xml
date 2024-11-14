@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+    <!-- Title Text -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="@string/apartment_management"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#000" />
+
+    <!-- Layout for dynamically displaying estates -->
+    <LinearLayout
+        android:id="@+id/estatesLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+
+    <!-- Message for no records -->
+    <TextView
+        android:id="@+id/noRecordsMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_estates_found"
+        android:textColor="@android:color/darker_gray"
+        android:visibility="gone"
+        android:layout_gravity="center" />
+
+    <!-- Complex Name Spinner -->
+    <Spinner
+        android:id="@+id/complexNameSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <!-- Floor Spinner -->
+    <Spinner
+        android:id="@+id/floorSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp" />
+
+    <!-- Furniture and Electronics Section --><LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Furniture Spinner -->
+    <Spinner
+        android:id="@+id/furnitureSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp" />
+
+    <!-- Layout for dynamically displaying selected furniture items -->
+    <LinearLayout
+        android:id="@+id/furnitureLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="1dp" />
+
+    <!-- Electronics Spinner -->
+    <Spinner
+        android:id="@+id/electronicsSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:layout_marginTop="20dp" />
+
+    <!-- Layout for dynamically displaying selected electronics items -->
+    <LinearLayout
+        android:id="@+id/electronicsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="1dp" />
+</LinearLayout>
+
+    <!-- Status Label and Dropdown -->
+    <TextView
+        android:id="@+id/statusLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/select_status"
+        android:layout_marginTop="8dp"
+        android:padding="10dp"
+        android:textSize="16sp"
+        android:textColor="#000000" />
+
+    <Spinner
+        android:id="@+id/statusSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:layout_marginTop="1dp"
+        android:spinnerMode="dropdown"
+        android:padding="2dp" />
+
+
+        <EditText
+            android:id="@+id/apartmentDescriptionEditText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:autofillHints="apartment description"
+            android:hint="@string/description"
+            android:inputType="textMultiLine"
+            android:lines="3"
+            android:textColorHint="#E65100"
+            tools:ignore="VisualLintTextFieldSize" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/kitchenImageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:contentDescription="@string/kitchen_image"
+            android:src="@drawable/upload_placeholder"
+            tools:ignore="ImageContrastCheck" />
+
+        <Button
+            android:id="@+id/kitchenImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/upload_kitchen_image" />
+    </LinearLayout>
+
+    <!-- Bedroom Image -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/bedroomImageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:contentDescription="@string/bedroom_image"
+            android:src="@drawable/upload_placeholder"
+            tools:ignore="ImageContrastCheck" />
+
+        <Button
+            android:id="@+id/bedroomImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/upload_bedroom_image" />
+    </LinearLayout>
+
+    <!-- ... (Similar ImageViewsand Buttons for other categories) ... -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/LivingRoomImageView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:contentDescription="@string/living_room_image"
+                android:src="@drawable/upload_placeholder"
+                tools:ignore="ImageContrastCheck" />
+
+            <Button
+                android:id="@+id/LivingRoomImageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/uploadlivingroomimage" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/BathroomImageView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:contentDescription="@string/bedroom_image"
+                android:src="@drawable/upload_placeholder" />
+
+            <Button
+                android:id="@+id/BathroomImageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/uploadbathroomimageimage" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ExteriorImageView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:contentDescription="@string/exterior_image"
+                android:src="@drawable/upload_placeholder" />
+
+            <Button
+                android:id="@+id/ExteriorImageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/uploadexteriorimage" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/DiningRoomImageView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:contentDescription="@string/dining_room_image"
+                android:src="@drawable/upload_placeholder" />
+
+            <Button
+                android:id="@+id/DiningRoomImageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/uploaddiningroomimage" />
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/BalconyImageView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:contentDescription="@string/balcony_image"
+                android:src="@drawable/upload_placeholder" />
+
+            <Button
+                android:id="@+id/BalconyImageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/uploadbalconyimage" />
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/parkingImageView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:contentDescription="@string/parking_image"
+                android:src="@drawable/upload_placeholder" />
+
+            <Button
+                android:id="@+id/ParkingImageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/uploadparkingimage" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/hallwayImageView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:contentDescription="@string/hallway_image"
+                android:src="@drawable/upload_placeholder" />
+
+            <Button
+                android:id="@+id/HallwayImageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/uploadhallwayimage" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/StorageroomImageView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:contentDescription="@string/storage_room_image"
+                android:src="@drawable/upload_placeholder" />
+
+            <Button
+                android:id="@+id/StorageroomImageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/uploadstorageroomimage" />
+        </LinearLayout>
+</LinearLayout>
+
+
+    </ScrollView>

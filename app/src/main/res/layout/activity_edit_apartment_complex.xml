@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/etComplexName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="complex name"
+        android:hint="@string/complex_name"
+        android:inputType="text"
+        android:minHeight="48dp"
+        tools:ignore="VisualLintTextFieldSize" />
+
+    <EditText
+        android:id="@+id/etFloors"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="floors"
+        android:hint="@string/number_of_floors"
+        android:inputType="number"
+        android:minHeight="48dp"
+        tools:ignore="VisualLintTextFieldSize" />
+
+    <EditText
+        android:id="@+id/etParkingSlots"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="parking_slots"
+        android:hint="@string/number_of_parking_slots"
+        android:inputType="number"
+        android:minHeight="48dp"
+        tools:ignore="VisualLintTextFieldSize" />
+
+    <!-- Replace this with SwitchCompat in XML -->
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/swSecurityPersonnel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:text="@string/security_personnel_24_7" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/swCCTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:text="@string/cctv_available" />
+
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save"/>
+</LinearLayout>

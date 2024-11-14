@@ -1,0 +1,179 @@
+<resources>
+    <string name="app_name">Apartment App</string>
+    <string name="text">Text</string>
+    <string name="welcome_message">Welcome, Admin: %1$s</string>
+    <string name="view">View</string>
+    <string name="login">Login</string>
+    <string name="welcome_admin">Welcome, Admin</string>
+    <string name="admin_dashboard">Admin Dashboard</string>
+    <string name="apartment_complex_management">Apartment Complex</string>
+    <string name="apartment_management">Apartment Management</string>
+    <string name="rent_payment_management">Rent Management</string>
+    <string name="maintenance_request_management">Maintenance Requests</string>
+    <string name="user_management">User Management</string>
+    <string name="manage">Manage</string>
+    <string name="lease_agreement_management">Lease Management</string>
+    <string name="lease_termination_requests">Lease Termination</string>
+    <string name="reports_and_analytics">Reports and Analytics</string>
+    <string name="settings">Settings</string>
+    <string name="tenant_management">Tenant Management</string>
+    <string name="furniture_electronics_management"><![CDATA[Furniture & Electronics]]></string>
+    <string name="maintenance_requests">Maintenance Requests</string>
+    <string name="apartment_estate_management">Apartment Estate</string>
+    <string name="logo_description">Logo Description</string>
+
+    <string name="photo">Photo</string>
+    <string name="id_front_photo">ID Front Photo</string>
+    <string name="id_back_photo">ID Back Photo</string>
+
+    <string name="user_name">Name: %1$s %2$s</string>
+    <string name="user_email">Email: %1$s</string>
+
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="passportphoto">passportPhoto</string>
+    <string name="add_user">Add User</string>
+    <string name="manage_users">Manage Users</string>
+    <string name="welcome_to_staff_dashboard">Welcome to Staff Dashboard</string>
+    <string name="welcome">Welcome</string>
+    <string name="tap_to_upload_passport_photo">Tap to upload Passport Photo</string>
+    <string name="tap_to_upload_id_front">Tap to upload ID Front</string>
+    <string name="tap_to_upload_id_back">Tap to upload ID Back</string>
+    <string name="choose_user_role">choose user role</string>
+    <string name="user_role">Role: %1$s</string>
+
+    <string name="delete_user">Delete</string>
+    <string name="manage_each_users">Manage each Users</string>
+    <string name="save_changes">Save Changes</string>
+    <string name="first_name">First Name</string>
+    <string name="role">Role</string>
+    <string name="last_name">Last Name</string>
+    <string name="edit_user">Edit User</string>
+    <string name="list_of_users_for_management">List of users for management</string>
+    <string name="passport_photo">Passport Photo</string>
+    <string name="save_user">Save User</string>
+    <string name="activity_assigned_maintenance_tasks">Assigned maintenance tasks</string>
+    <string name="activity_report_maintenance_issue">Report maintenance issue</string>
+    <string name="activity_submit_work_completion">Submit work completion</string>
+    <string name="activity_view_notifications">View notifications</string>
+    <string name="staff_dashboard">Staff dashboard</string>
+    <string name="upload_images">Upload Images</string>
+    <string name="edit_passport_photo">edit Passport Photo</string>
+    <string name="click_to_change_role">click to change role</string>
+    <string name="your_text_here" />
+    <string name="edit_id_front">edit ID front</string>
+    <string name="edit_id_back">edit ID back</string>
+    <string name="background_image_description">background image description</string>
+    <string name="enter_estate_name">Enter Estate Name</string>
+    <string name="add_estate">Add Estate</string>
+    <string name="manage_estate">manage estate</string>
+    <string name="estate_name">Estate name</string>
+
+
+    <!-- User roles array for Spinner -->
+    <string-array name="user_roles">
+        <item>Admin</item>
+        <item>Staff</item>
+        <item>Caretaker</item>
+    </string-array>
+
+
+    <!-- Other existing strings -->
+    <string name="estate_added_success">Estate Added Successfully</string>
+    <string name="error_adding_estate">Error Adding Estate</string>
+    <string name="empty_estate_name">Estate Name Cannot Be Empty</string>
+    <string name="last_added_estate">Last Added: %1$s</string>
+    <string name="no_estates_available">No estates available.</string>
+    <string name="edit">edit</string>
+    <string name="delete">Delete</string>
+    <string name="edit_estate_title" />
+    <string name="manage_estate_name">manage estate name</string>
+    <string name="manage_estates">Manage Estates</string>
+    <string name="add_and_manage_estate" />
+    <string name="apartment_complex_name">Apartment Complex Name</string>
+    <string name="number_of_floors">Number of Floors</string>
+    <string name="number_of_parking_slots">Number of Parking Slots</string>
+    <string name="security_personnel_24_7">Security Personnel 24/7</string>
+    <string name="cctv_available">CCTV Available</string>
+    <string name="save">Sava</string>
+    <string name="update_complex">Update Complex</string>
+    <string name="apartment_complex_updated">Apartment Complex Updated</string>
+    <string name="update_failed">Update failed. Please try again.</string>
+    <string name="manage_apartments_complex">manage apartments complex</string>
+    <string name="complex_name">complex name</string>
+    <string name="name">Name</string>
+    <string name="Units">Unit</string>
+    <string name="Floors">Floor</string>
+    <string name="description">describe</string>
+    <string name="address">Address</string>
+    <string name="email_icon">email_icon</string>
+    <string name="password_icon">Password Icon</string>
+    <string name="enter_your_email">Enter your email</string>
+    <string name="enter_your_password">Enter your password</string>
+    <string name="apartment_number_name">Apartment Number/Name</string>
+    <string name="select_floor">select floor</string>
+    <string name="select_complex_name">select complex name</string>
+    <string name="apartment_description">apartment description</string>
+    <string name="Select_Status">Select Status</string>
+    <string name="select_apartment_type">Select Apartment Type</string>
+    <string name="select_furniture">Select Furniture</string>
+    <string name="select_electronics">Select Electronics</string>
+    <string name="manage_apartments">manage apartment</string>
+    <string name="kitchen_image">kitchen_image</string>
+    <string name="storage_room_image">storage_room_image</string>
+    <string name="hallway_image">hallway_image</string>
+    <string name="parking_image">parking_image</string>
+    <string name="balcony_image">balcony_image</string>
+    <string name="dining_room_image">dining_room_image</string>
+    <string name="exterior_image">exterior_image</string>
+    <string name="bathroom_image">bathroom_image</string>
+    <string name="living_room_image">living_room_image</string>
+    <string name="bedroom_image">bedroom_image</string>
+    <string name="apartment_type">apartment type</string>
+    <string name="appliances_management">Appliances management</string>
+    <string name="alliances">Alliances</string>
+    <string name="edit_appliance">Edit Appliance</string>
+    <string name="enter_appliance_name">Enter appliance name</string>
+    <string name="manage_appliances">Manage Appliances</string>
+    <string name="add_appliance">Add Appliance</string>
+    <string name="type">Type</string>
+    <string name="appliance_name">appliance name</string>
+    <string name="no_estates_found">no_estates_found</string>
+
+    <string-array name="appliance_types">
+        <item>Electronics</item>
+        <item>Furniture</item>
+    </string-array>
+
+    <string name="selected_furniture">Selected Furniture:</string>
+    <string name="selected_electronics">Selected Electronics:</string>
+    <string name="please_choose_furniture">Please choose furniture</string>
+    <string name="please_choose_electronics">Please choose electronics</string>
+    <string name="x">X</string>
+    <string name="item_with_remove">X</string>
+    <string name="no_records_found">No records found</string>
+    <string name="remove_item">Remove item</string>
+
+    <string name="item">Item</string>
+
+    <string name="selected_items">Selected items:</string>
+
+
+    <string name="selected_no_furniture">Selected No Furniture</string>
+
+    <string name="selected_no_electronics">Selected No Electronics</string>
+    <string name="select_status">Select Status</string>
+    <string name="upload_kitchen_image">Upload Kitchen Image</string>
+    <string name="upload_bedroom_image">Upload Bedroom Image</string>
+    <string name="uploadlivingroomimage">UploadLivingRoomImage</string>
+    <string name="uploadbathroomimageimage">UploadBathroomImageImage</string>
+    <string name="uploadexteriorimage">UploadExteriorImage</string>
+    <string name="uploaddiningroomimage">UploadDiningRoomImage</string>
+    <string name="uploadparkingimage">UploadParkingImage</string>
+    <string name="uploadhallwayimage">UploadHallwayImage</string>
+    <string name="uploadstorageroomimage">UploadStorageroomImage</string>
+    <string name="uploadbalconyimage">UploadBalconyImage</string>
+    <string name="balcony_Image">Balcony Image</string>
+
+    Balcony Image
+</resources>

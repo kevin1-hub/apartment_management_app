@@ -1,0 +1,24 @@
+<!-- res/drawable/button_background.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Shadow Layer -->
+    <item>
+        <shape android:shape="rectangle"><!-- Shadow elevation -->
+            <solid android:color="#C6EEF2" /> <!-- Shadow color -->
+            <corners android:radius="19.8dp" /> <!-- Corner radius for shadow -->
+        </shape>
+    </item>
+
+    <!-- Button Background Layer with Three-Color Gradient -->
+    <item android:top="2dp" android:left="2dp" android:right="2dp" android:bottom="4dp">
+        <shape android:shape="rectangle">
+            <!-- Three-color gradient background -->
+            <gradient
+                android:startColor="#92BBEB"
+            android:centerColor="#A9C589"
+            android:endColor="#A2A49F"
+            android:angle="180"
+            android:type="linear" />
+            <corners android:radius="20dp" /> <!-- Corner radius for button -->
+        </shape>
+    </item>
+</layer-list>

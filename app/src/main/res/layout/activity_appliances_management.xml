@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#F5F5F5">
+
+    <!-- Page Title -->
+    <TextView
+        android:id="@+id/titleAppliancesManagement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/manage_appliances"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:padding="8dp"
+        android:layout_marginBottom="16dp"
+        tools:ignore="VisualLintOverlap" />
+
+    <!-- Card for Appliance Name input -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardApplianceName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleAppliancesManagement"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:elevation="4dp"
+        android:background="#FFFFFF">
+
+        <EditText
+            android:id="@+id/editTextApplianceName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_appliance_name"
+            android:inputType="textCapWords"
+            android:padding="16dp"
+            android:textSize="16sp"
+            tools:ignore="Autofill,VisualLintTextFieldSize,TextContrastCheck" />
+    </androidx.cardview.widget.CardView>
+
+    <!-- Card for Appliance Type dropdown -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardApplianceType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cardApplianceName"
+        android:layout_marginBottom="16dp"
+        android:elevation="4dp"
+        android:background="#FFFFFF">
+
+        <Spinner
+            android:id="@+id/spinnerApplianceType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:spinnerMode="dropdown"/>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Add Appliance Button -->
+    <Button
+        android:id="@+id/buttonAddAppliance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cardApplianceType"
+        android:text="@string/add_appliance"
+        android:textColor="@android:color/white"
+        style="@style/CustomButtonStyle"
+        android:layout_marginTop="16dp"
+        android:elevation="4dp"
+        android:padding="12dp"
+        tools:ignore="VisualLintButtonSize" />
+
+    <!-- Manage Appliances Button -->
+    <Button
+        android:id="@+id/buttonManageAppliances"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonAddAppliance"
+        android:text="@string/manage_appliances"
+        android:textColor="@android:color/white"
+        style="@style/CustomButtonStyle"
+        android:layout_marginTop="8dp"
+        android:elevation="4dp"
+        android:padding="12dp"
+        tools:ignore="VisualLintButtonSize" />
+
+</RelativeLayout>

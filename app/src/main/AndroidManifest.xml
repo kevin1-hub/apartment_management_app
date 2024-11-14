@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.apartmentmanagementapp">
+
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Apartmentmanagementapp">
+        <activity
+            android:name=".ApartmentAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".ApplianceAdapter"
+            android:exported="false" /> <!-- Activities -->
+        <activity
+            android:name=".AppliancesManagementActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditAppliancesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ManageAppliancesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditApartmentComplexActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ManageApartmentComplexActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditEstateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ManageEstatesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SubmitWorkCompletionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ViewNotificationsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WorkCompletionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ReportMaintenanceIssueActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AssignedMaintenanceTasksActivity"
+            android:exported="false" /> <!-- Main activity -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- Login and dashboard activities -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".AdminDashboardActivity"
+            android:exported="true" />
+        <activity
+            android:name=".EditUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ManageEachUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CaretakerDashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StaffDashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ApartmentEstateManagementActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ReportsAnalyticsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LeaseTerminationRequestsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LeaseAgreementManagementActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MaintenanceRequestManagementActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RentPaymentManagementActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TenantManagementActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ApartmentManagementActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ApartmentComplexManagementActivity"
+            android:exported="false" /> <!-- User management activity -->
+        <activity android:name=".UserManagementActivity" />
+    </application>
+
+</manifest>

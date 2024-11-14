@@ -1,0 +1,28 @@
+<!-- res/drawable/input_background.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Bottom Shadow Layer -->
+    <item android:bottom="0.2dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#99000000"/> <!-- Semi-transparent shadow -->
+            <corners android:radius="8dp"/>
+        </shape>
+    </item>
+
+    <!-- Gradient Background Layer -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#B2D5D9"
+                android:centerColor="#CCCBBE"
+                android:endColor="#CADAE6"
+                android:type="linear"
+                android:angle="180"/>
+            <corners android:radius="8dp"/>
+            <padding
+                android:left="10dp"
+                android:right="10dp"
+                android:top="8dp"
+                android:bottom="8dp"/>
+        </shape>
+    </item>
+</layer-list>

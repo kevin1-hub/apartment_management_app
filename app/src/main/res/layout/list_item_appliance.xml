@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:backgroundTint="#95FFFFFF"
+    android:padding="8dp">
+
+    <!-- Row for Appliance Name and Type -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+
+        <!-- Appliance Name -->
+        <TextView
+            android:id="@+id/textViewApplianceName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/appliance_name"
+            android:textColor="#03A9F4"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- Appliance Type -->
+        <TextView
+            android:id="@+id/textViewApplianceType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/type"
+            android:textColor="#03A9F4"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- Row for Edit and Delete Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp">
+
+    <!-- Edit Button -->
+    <Button
+        android:id="@+id/buttonEdit"
+        android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:text="@string/edit"
+    style="@style/CustomButtonStyle"
+    android:textColor="@color/textColorPrimary"
+    android:layout_weight="1"
+    android:layout_marginEnd="8dp"
+        tools:ignore="VisualLintButtonSize" />
+
+    <!-- Delete Button -->
+    <Button
+        android:id="@+id/buttonDelete"
+        android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:text="@string/delete"
+    style="@style/CustomButtonStyle"
+    android:textColor="@color/textColorPrimary"
+    android:layout_weight="1"
+    android:layout_marginStart="8dp"
+        tools:ignore="VisualLintButtonSize" />
+
+</LinearLayout>
+
+
+    </LinearLayout>

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:fillViewport="true"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".YourActivity">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            app:cardElevation="12dp"
+            app:cardCornerRadius="40dp"
+            android:backgroundTint="#208B8A57">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="18dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingBottom="2dp"
+                    android:text="@string/staff_dashboard"
+                    android:textColor="#408B8A57"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <!-- Sub-Card for Apartment Complex Management -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    app:cardElevation="4dp"
+                    app:cardCornerRadius="30dp"
+                    android:backgroundTint="#408B8A57">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="4dp">
+
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:contentDescription="@string/activity_view_notifications"
+                            android:drawableStart="@android:drawable/ic_menu_view"
+                            tools:ignore="ImageContrastCheck" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/activity_view_notifications"
+                            android:textSize="12sp"
+                            android:layout_gravity="center"
+                            android:padding="10dp"
+                            android:textColor="#FFFFFF"/>
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:backgroundTint="@color/colorPrimary"
+                            android:onClick="onViewNotificationsClick"
+                            android:text="@string/manage"
+                            android:textSize="12sp"
+                            android:textColor="#212121"
+                            tools:ignore="DuplicateSpeakableTextCheck" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    app:cardElevation="4dp"
+                    app:cardCornerRadius="30dp"
+                    android:backgroundTint="#408B8A57">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="4dp">
+
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:contentDescription="@string/activity_submit_work_completion"
+                            android:drawableStart="@android:drawable/ic_menu_view"
+                            tools:ignore="ImageContrastCheck" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:padding="10dp"
+                            android:text="@string/activity_submit_work_completion"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp"
+                            tools:ignore="TextContrastCheck" />
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:backgroundTint="@color/colorPrimary"
+                            android:onClick="onSubmitWorkCompletionClick"
+                            android:text="@string/manage"
+                            android:textSize="12sp"
+                            android:textColor="#212121"
+                            tools:ignore="DuplicateSpeakableTextCheck" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+
+
+
+                <!-- Sub-Card for Apartment Management -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    app:cardElevation="4dp"
+                    app:cardCornerRadius="30dp"
+                    android:backgroundTint="#408B8A57">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:contentDescription="@string/activity_report_maintenance_issue"
+                            android:drawableStart="@android:drawable/ic_menu_info_details"
+                            tools:ignore="ImageContrastCheck" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/activity_report_maintenance_issue"
+                            android:textSize="12sp"
+                            android:layout_gravity="center"
+                            android:padding="10dp"
+                            android:textColor="#FFFFFF"/>
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:backgroundTint="@color/colorPrimary"
+                            android:onClick="onReportMaintenanceIssueClick"
+                            android:textSize="12sp"
+                            android:text="@string/manage"
+                            android:textColor="#212121" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- Sub-Card for Tenant Management -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    app:cardElevation="4dp"
+                    app:cardCornerRadius="30dp"
+                    android:backgroundTint="#408B8A57">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:contentDescription="@string/activity_assigned_maintenance_tasks"
+                            android:drawableStart="@android:drawable/ic_menu_view"
+                            tools:ignore="ImageContrastCheck" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/activity_assigned_maintenance_tasks"
+                            android:textSize="12sp"
+                            android:layout_gravity="center"
+                            android:padding="10dp"
+                            android:textColor="#FFFFFF"/>
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:backgroundTint="@color/colorPrimary"
+                            android:onClick="onAssignedMaintenanceTasksClick"
+                            android:textSize="12sp"
+                            android:text="@string/manage"
+                            android:textColor="#212121" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

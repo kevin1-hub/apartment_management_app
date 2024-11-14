@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary colors -->
+    <color name="colorPrimary">#688EBD</color>
+    <color name="colorPrimaryDark">#4760A2</color>
+    <color name="colorAccent">#D8CF8C</color>
+
+    <!-- Hint color -->
+    <color name="hintColor">#9E9E9E</color>
+
+    <!-- Background and text colors -->
+    <color name="colorBackground">#D5D2D0</color>
+    <color name="colorText">#00BCD4</color>
+    <color name="white">#FFFFFF</color>
+
+    <!-- Default background color -->
+    <color name="default_background_color">#FF763500</color>
+
+
+
+    <!-- Define text colors here -->
+    <color name="textColorPrimary">#000000</color>
+    <color name="textColorSecondary">#757575</color>
+    <color name="textColorAccent">#00BCD4</color>
+    <color name="textColorError">#FF0000</color>
+
+    <!-- res/values/colors.xml -->
+    <color name="hintTextColor">#E2DA94</color> <!-- Choose your preferred color -->
+
+</resources>

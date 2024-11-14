@@ -1,0 +1,48 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme -->
+    <style name="BaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Fullscreen and translucent status -->
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+    <!-- Application theme -->
+    <style name="Theme.Apartmentmanagementapp" parent="BaseTheme">
+        <item name="android:windowBackground">@drawable/login_background</item> <!-- Background image -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Splash Screen Theme -->
+    <style name="Theme.SplashScreen" parent="BaseTheme">
+        <item name="android:windowBackground">@android:color/white</item>
+    </style>
+
+    <!-- Splash theme -->
+    <style name="SplashTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@color/default_background_color</item> <!-- Set your desired background color -->
+    </style>
+
+    <!-- res/values/styles.xml -->
+    <style name="CustomButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/button_background</item>
+        <item name="android:textColor">#AFFF52</item> <!-- Button text color -->
+        <item name="android:elevation">20dp</item> <!-- Button elevation -->
+    </style>
+
+    <!-- res/values/styles.xml -->
+    <style name="CustomEditTextStyle">
+        <item name="android:textColor">@color/hintTextColor</item>
+        <item name="android:textColorHint">@color/hintTextColor</item>
+    </style>
+
+
+
+
+
+
+
+</resources>

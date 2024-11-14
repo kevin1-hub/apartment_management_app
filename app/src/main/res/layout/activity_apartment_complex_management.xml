@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".ApartmentComplexManagementActivity">
+
+    <!-- Card for Apartment Complex Name -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        android:layout_marginBottom="8dp">
+        <EditText
+            android:id="@+id/etComplexName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="Complex Name"
+            android:hint="@string/apartment_complex_name"
+            android:inputType="text"
+            android:padding="16dp"
+            tools:ignore="VisualLintTextFieldSize" />
+    </androidx.cardview.widget.CardView>
+
+    <!-- Card for Number of Floors -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        app:cardElevation="12dp"
+        app:cardCornerRadius="40dp"
+        android:backgroundTint="#208B8A57">
+        <EditText
+            android:id="@+id/etFloors"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="Floor numbers"
+            android:hint="@string/number_of_floors"
+            android:inputType="number"
+            android:padding="16dp"
+            tools:ignore="VisualLintTextFieldSize" />
+    </androidx.cardview.widget.CardView>
+
+    <!-- Card for Parking Slots -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        app:cardElevation="12dp"
+        app:cardCornerRadius="40dp"
+        android:backgroundTint="#208B8A57">
+        <EditText
+            android:id="@+id/etParkingSlots"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="number of parking slots"
+            android:hint="@string/number_of_parking_slots"
+            android:inputType="number"
+            android:padding="16dp"
+            tools:ignore="VisualLintTextFieldSize" />
+    </androidx.cardview.widget.CardView>
+
+    <!-- Card for Security Personnel Switch -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        app:cardElevation="12dp"
+        app:cardCornerRadius="40dp"
+        android:backgroundTint="#208B8A57">
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/swSecurityPersonnel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/security_personnel_24_7"
+            android:padding="16dp"
+            tools:ignore="VisualLintButtonSize" />
+    </androidx.cardview.widget.CardView>
+
+    <!-- Card for CCTV Switch -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        app:cardElevation="12dp"
+        app:cardCornerRadius="40dp"
+        android:backgroundTint="#208B8A57">
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/swCCTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cctv_available"
+            android:padding="16dp"
+            tools:ignore="VisualLintButtonSize" />
+    </androidx.cardview.widget.CardView>
+
+    <!-- Save Button -->
+    <Button
+        android:id="@+id/btnSave"
+        style="@style/CustomButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/save"
+        android:textColor="#212121"
+        tools:ignore="VisualLintButtonSize,TextContrastCheck" />
+
+    <!-- Manage Complex Button -->
+    <Button
+        android:id="@+id/btnManageComplex"
+        style="@style/CustomButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/manage_apartments_complex"
+        android:textColor="#212121"
+        tools:ignore="VisualLintButtonSize,TextContrastCheck" />
+
+</LinearLayout>

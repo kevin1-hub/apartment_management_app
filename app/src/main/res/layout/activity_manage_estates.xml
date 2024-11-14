@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp"> <!-- Padding to avoid touching phone edges -->
+
+    <TextView
+        android:id="@+id/pageTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/manage_estate_name"
+        android:textSize="24sp"
+        android:textColor="#000000"
+        android:layout_marginBottom="16dp"
+        android:layout_gravity="center" />
+
+    <!-- Main Card that holds the entire estates list -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp"
+        android:backgroundTint="#608B8A57"
+        android:layout_gravity="center_vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:id="@+id/estatesLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+                <!-- This TextView will show when there are no estates -->
+                <TextView
+                    android:id="@+id/noRecordsMessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/no_estates_available"
+                    android:visibility="gone"
+                android:layout_gravity="center" />
+
+
+
+
+            <!-- Example Subcard (Estate item layout goes here) -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <!-- Estate Name Text -->
+                    <TextView
+                        android:id="@+id/estateNameTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/estate_name"
+                        android:textSize="16sp"
+                        android:textColor="#000000" />
+                    </LinearLayout>
+
+                    <!-- Buttons for edit and delete -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="8dp">
+
+                        <Button
+                            android:id="@+id/editButton"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                        style="@style/CustomButtonStyle"
+                        android:text="@string/edit" />
+
+                        <Button
+                            android:id="@+id/deleteButton"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                        style="@style/CustomButtonStyle"
+                        android:text="@string/delete" />
+
+                    </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
